@@ -7,6 +7,7 @@ import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+from torch.utils.tensorboard import SummaryWriter
 
 from velodyne_env import GazeboEnv
 
@@ -103,6 +104,7 @@ recent_rewards = []
 recent_success = []
 recent_collision = []
 log_dir = make_test_run_dir()
+writer = SummaryWriter(log_dir=log_dir)
 
 print("==============================================")
 print("Test version: single-agent-eval-v1-headless")
@@ -183,6 +185,16 @@ while True:
                     collision_count,
                 )
             )
+
+        writer.add_scalar("test/episode_reward", episode_reward, episode_num)
+        writer.add_scalar("test/episode_success", int(episode_target), episode_num)
+        writer.add_scalar("test/episode_collision", int(episode_collision), episode_num)
+        writer.add_scalar("test/final_distance", final_distance, episode_num)
+        writer.add_scalar("test/steps_per_sec", steps_per_sec, episode_num)
+        writer.add_scalar("test/recent_avg_reward", avg_reward, episode_num)
+        writer.add_scalar("test/recent_success_rate", avg_success, episode_num)
+        writer.add_scalar("test/recent_collision_rate", avg_collision, episode_num)
+        writer.flush()
 
         save_test_state(
             {

@@ -1,0 +1,148 @@
+Activated DRL robot navigation Python environment.
+Python: Python 3.8.10
+Venv: /home/jiutian/venvs/drl-robot-nav
+Roscore launched!
+Unable to register with master node [http://localhost:11311]: master may not be running yet. Will keep trying.
+Gazebo launched!
+[INFO] [1778719961.355987, 0.000000]: Loading model XML from ros parameter robot_description
+[INFO] [1778719961.358426, 0.000000]: Waiting for service /gazebo/spawn_urdf_model
+[INFO] [1778719961.661561, 0.388000]: Calling service /gazebo/spawn_urdf_model
+[INFO] [1778719962.562290, 0.572000]: Spawn status: SpawnModel: Successfully spawned entity
+[33m[WARN] [1778719962.669297398, 0.572000000]: DiffDrive(ns = r1/): missing <publishOdomTF> default is true[0m
+[33m[WARN] [1778719962.669409073, 0.572000000]: GazeboRosDiffDrive Plugin (ns = ) missing <publishTf>, defaults to 1[0m
+[0m[INFO] [1778719961.349705809]: Finished loading Gazebo ROS API Plugin.[0m
+[0m[INFO] [1778719961.350316772]: waitForService: Service [/gazebo/set_physics_properties] has not been advertised, waiting...[0m
+[0m[INFO] [1778719961.472910851, 0.204000000]: waitForService: Service [/gazebo/set_physics_properties] is now available.[0m
+[0m[INFO] [1778719961.485750125, 0.216000000]: Physics dynamic reconfigure ready.[0m
+[0m[INFO] [1778719961.939019095, 0.572000000]: Laser Plugin: The 'robotNamespace' param was empty[0m
+[0m[INFO] [1778719961.939038499, 0.572000000]: Starting Laser Plugin (ns = r1)[0m
+[0m[INFO] [1778719961.939419239, 0.572000000]: Laser Plugin (ns = r1)  <tf_prefix_>, set to ""[0m
+[0m[INFO] [1778719962.562247069, 0.572000000]: Velodyne laser plugin missing <min_intensity>, defaults to no clipping[0m
+[0m[INFO] [1778719962.563123438, 0.572000000]: Velodyne laser plugin ready, 16 lasers[0m
+[0m[INFO] [1778719962.668962432, 0.572000000]: Starting plugin DiffDrive(ns = r1/)[0m
+[0m[INFO] [1778719962.669009245, 0.572000000]: DiffDrive(ns = r1/): <rosDebugLevel> = Debug[0m
+[0m[INFO] [1778719962.669243494, 0.572000000]: DiffDrive(ns = r1/): <tf_prefix> = [0m
+[32m[DEBUG] [1778719962.669263270, 0.572000000]: DiffDrive(ns = r1/): <commandTopic> = cmd_vel[0m
+[32m[DEBUG] [1778719962.669267566, 0.572000000]: DiffDrive(ns = r1/): <odometryTopic> = odom[0m
+[32m[DEBUG] [1778719962.669271908, 0.572000000]: DiffDrive(ns = r1/): <odometryFrame> = odom[0m
+[32m[DEBUG] [1778719962.669276011, 0.572000000]: DiffDrive(ns = r1/): <robotBaseFrame> = base_link[0m
+[32m[DEBUG] [1778719962.669292544, 0.572000000]: DiffDrive(ns = r1/): <publishWheelTF> = false[0m
+[32m[DEBUG] [1778719962.669313504, 0.572000000]: DiffDrive(ns = r1/): <publishWheelJointState> = true[0m
+[32m[DEBUG] [1778719962.669336289, 0.572000000]: DiffDrive(ns = r1/): <wheelSeparation> = 0.29999999999999999[0m
+[32m[DEBUG] [1778719962.669342506, 0.572000000]: DiffDrive(ns = r1/): <wheelDiameter> = 0.17999999999999999[0m
+[32m[DEBUG] [1778719962.669347948, 0.572000000]: DiffDrive(ns = r1/): <wheelAcceleration> = 1.8[0m
+[32m[DEBUG] [1778719962.669353371, 0.572000000]: DiffDrive(ns = r1/): <wheelTorque> = 20[0m
+[32m[DEBUG] [1778719962.669358002, 0.572000000]: DiffDrive(ns = r1/): <updateRate> = 50[0m
+[32m[DEBUG] [1778719962.669379055, 0.572000000]: DiffDrive(ns = r1/): <odometrySource> = world := 1[0m
+[32m[DEBUG] [1778719962.669392828, 0.572000000]: DiffDrive(ns = r1/): <leftJoint> = left_hub_joint[0m
+[32m[DEBUG] [1778719962.669399576, 0.572000000]: DiffDrive(ns = r1/): <rightJoint> = right_hub_joint[0m
+[0m[INFO] [1778719962.669662083, 0.572000000]: DiffDrive(ns = r1/): Advertise joint_states[0m
+[0m[INFO] [1778719962.669856166, 0.572000000]: DiffDrive(ns = r1/): Try to subscribe to cmd_vel[0m
+[0m[INFO] [1778719962.670530603, 0.572000000]: DiffDrive(ns = r1/): Subscribe to cmd_vel[0m
+[0m[INFO] [1778719962.670684562, 0.572000000]: DiffDrive(ns = r1/): Advertise odom on odom [0m
+[0m[INFO] [1778719962.674922847, 0.572000000]: GazeboRosJointStatePublisher is going to publish joint: chassis_swivel_joint[0m
+[0m[INFO] [1778719962.674938202, 0.572000000]: GazeboRosJointStatePublisher is going to publish joint: swivel_wheel_joint[0m
+[0m[INFO] [1778719962.674949412, 0.572000000]: GazeboRosJointStatePublisher is going to publish joint: left_hub_joint[0m
+[0m[INFO] [1778719962.674958972, 0.572000000]: GazeboRosJointStatePublisher is going to publish joint: right_hub_joint[0m
+[0m[INFO] [1778719962.674971202, 0.572000000]: Starting GazeboRosJointStatePublisher Plugin (ns = r1/)!, parent name: r1[0m
+[32m[DEBUG] [1778719962.706692842, 0.593000000]: Trying to publish message of type [nav_msgs/Odometry/cd5e73d190d741a2f92e81eda573aca7] on a publisher with type [nav_msgs/Odometry/cd5e73d190d741a2f92e81eda573aca7][0m
+[32m[DEBUG] [1778719962.706733363, 0.593000000]: Trying to publish message of type [sensor_msgs/JointState/3066dcd76a6cfaef579bd0f34173e9fd] on a publisher with type [sensor_msgs/JointState/3066dcd76a6cfaef579bd0f34173e9fdtest_velodyne_td3.py:41: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  torch.load("%s/%s_actor.pth" % (directory, filename), map_location=device)
+test_velodyne_td3.py:64: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  return torch.load(state_path, map_location="cpu")
+==============================================
+Test version: single-agent-eval-v1-headless
+Test process PID: 2922325
+Launchfile: multi_robot_scenario_headless.launch
+Device: cuda
+GPU: NVIDIA GeForce RTX 4090
+TensorBoard log dir: runs/test_May14_08-52-45_JiuTian-AI4090
+State path: ./checkpoints/TD3_velodyne_test_state.pt
+Resume mode: True
+Starting episode: 32
+Starting total steps: 4159
+==============================================
+Episode 33 complete | total_step=4211 | episode_steps=52 | reward=-83.486 | target=0 | collision=1 | final_distance=2.513 | steps/sec=8.748
+Episode 34 complete | total_step=4270 | episode_steps=59 | reward=177.609 | target=1 | collision=0 | final_distance=0.250 | steps/sec=7.933
+Episode 35 complete | total_step=4316 | episode_steps=46 | reward=140.974 | target=1 | collision=0 | final_distance=0.257 | steps/sec=7.913
+Episode 36 complete | total_step=4388 | episode_steps=72 | reward=130.174 | target=1 | collision=0 | final_distance=0.284 | steps/sec=8.013
+Episode 37 complete | total_step=4453 | episode_steps=65 | reward=165.238 | target=1 | collision=0 | final_distance=0.277 | steps/sec=7.999
+Episode 38 complete | total_step=4489 | episode_steps=36 | reward=132.701 | target=1 | collision=0 | final_distance=0.292 | steps/sec=7.985
+Episode 39 complete | total_step=4533 | episode_steps=44 | reward=120.240 | target=1 | collision=0 | final_distance=0.298 | steps/sec=8.010
+Episode 40 complete | total_step=4612 | episode_steps=79 | reward=212.688 | target=1 | collision=0 | final_distance=0.232 | steps/sec=8.001
+Recent 10 episodes | avg_reward=124.517 | success_rate=0.875 | collision_rate=0.125 | success_count=33 | collision_count=3
+Episode 41 complete | total_step=4732 | episode_steps=120 | reward=222.186 | target=1 | collision=0 | final_distance=0.250 | steps/sec=7.997
+Episode 42 complete | total_step=4798 | episode_steps=66 | reward=194.431 | target=1 | collision=0 | final_distance=0.269 | steps/sec=7.970
+Episode 43 complete | total_step=4921 | episode_steps=123 | reward=147.639 | target=1 | collision=0 | final_distance=0.278 | steps/sec=8.043
+Episode 44 complete | total_step=5039 | episode_steps=118 | reward=160.489 | target=1 | collision=0 | final_distance=0.299 | steps/sec=7.928
+Episode 45 complete | total_step=5141 | episode_steps=102 | reward=227.895 | target=1 | collision=0 | final_distance=0.298 | steps/sec=7.994
+Episode 46 complete | total_step=5198 | episode_steps=57 | reward=198.572 | target=1 | collision=0 | final_distance=0.256 | steps/sec=8.000
+Episode 47 complete | total_step=5199 | episode_steps=1 | reward=-100.000 | target=0 | collision=1 | final_distance=1.320 | steps/sec=8.126
+Episode 48 complete | total_step=5699 | episode_steps=500 | reward=-5.288 | target=0 | collision=0 | final_distance=2.853 | steps/sec=8.068
+Episode 49 complete | total_step=5742 | episode_steps=43 | reward=143.027 | target=1 | collision=0 | final_distance=0.275 | steps/sec=8.054
+Episode 50 complete | total_step=5878 | episode_steps=136 | reward=241.860 | target=1 | collision=0 | final_distance=0.288 | steps/sec=8.004
+Recent 10 episodes | avg_reward=143.081 | success_rate=0.800 | collision_rate=0.100 | success_count=41 | collision_count=4
+Episode 51 complete | total_step=5911 | episode_steps=33 | reward=103.403 | target=1 | collision=0 | final_distance=0.253 | steps/sec=8.001
+Episode 52 complete | total_step=5977 | episode_steps=66 | reward=190.480 | target=1 | collision=0 | final_distance=0.252 | steps/sec=8.097
+Episode 53 complete | total_step=5984 | episode_steps=7 | reward=-99.457 | target=0 | collision=1 | final_distance=5.688 | steps/sec=8.120
+Episode 54 complete | total_step=6078 | episode_steps=94 | reward=198.392 | target=1 | collision=0 | final_distance=0.287 | steps/sec=8.006
+Episode 55 complete | total_step=6141 | episode_steps=63 | reward=147.523 | target=1 | collision=0 | final_distance=0.261 | steps/sec=7.986
+Episode 56 complete | total_step=6210 | episode_steps=69 | reward=212.253 | target=1 | collision=0 | final_distance=0.280 | steps/sec=8.006
+Episode 57 complete | total_step=6222 | episode_steps=12 | reward=-113.615 | target=0 | collision=1 | final_distance=5.458 | steps/sec=7.905
+Episode 58 complete | total_step=6290 | episode_steps=68 | reward=193.583 | target=1 | collision=0 | final_distance=0.275 | steps/sec=7.997
+Episode 59 complete | total_step=6351 | episode_steps=61 | reward=142.840 | target=1 | collision=0 | final_distance=0.237 | steps/sec=8.036
+Episode 60 complete | total_step=6352 | episode_steps=1 | reward=100.000 | target=1 | collision=0 | final_distance=0.142 | steps/sec=8.672
+Recent 10 episodes | avg_reward=107.540 | success_rate=0.800 | collision_rate=0.200 | success_count=49 | collision_count=6
+Episode 61 complete | total_step=6411 | episode_steps=59 | reward=219.985 | target=1 | collision=0 | final_distance=0.269 | steps/sec=7.995
+Episode 62 complete | total_step=6503 | episode_steps=92 | reward=194.061 | target=1 | collision=0 | final_distance=0.262 | steps/sec=8.790
+Episode 63 complete | total_step=7003 | episode_steps=500 | reward=-94.411 | target=0 | collision=0 | final_distance=5.109 | steps/sec=8.272
+Episode 64 complete | total_step=7121 | episode_steps=118 | reward=185.763 | target=1 | collision=0 | final_distance=0.278 | steps/sec=8.024
+Episode 65 complete | total_step=7254 | episode_steps=133 | reward=212.653 | target=1 | collision=0 | final_distance=0.278 | steps/sec=8.012
+Episode 66 complete | total_step=7333 | episode_steps=79 | reward=165.019 | target=1 | collision=0 | final_distance=0.269 | steps/sec=8.002
+Episode 67 complete | total_step=7405 | episode_steps=72 | reward=162.213 | target=1 | collision=0 | final_distance=0.255 | steps/sec=7.976
+Episode 68 complete | total_step=7528 | episode_steps=123 | reward=142.374 | target=1 | collision=0 | final_distance=0.297 | steps/sec=7.972
+Episode 69 complete | total_step=8028 | episode_steps=500 | reward=-43.989 | target=0 | collision=0 | final_distance=1.903 | steps/sec=7.929
+Episode 70 complete | total_step=8065 | episode_steps=37 | reward=100.600 | target=1 | collision=0 | final_distance=0.273 | steps/sec=8.000
+Recent 10 episodes | avg_reward=124.427 | success_rate=0.800 | collision_rate=0.000 | success_count=57 | collision_count=6
+Episode 71 complete | total_step=8150 | episode_steps=85 | reward=197.007 | target=1 | collision=0 | final_distance=0.254 | steps/sec=8.040
+Episode 72 complete | total_step=8174 | episode_steps=24 | reward=-114.743 | target=0 | collision=1 | final_distance=3.819 | steps/sec=7.729
+Episode 73 complete | total_step=8263 | episode_steps=89 | reward=199.853 | target=1 | collision=0 | final_distance=0.246 | steps/sec=7.991
+Episode 74 complete | total_step=8347 | episode_steps=84 | reward=200.032 | target=1 | collision=0 | final_distance=0.270 | steps/sec=8.026
+Episode 75 complete | total_step=8419 | episode_steps=72 | reward=169.326 | target=1 | collision=0 | final_distance=0.292 | steps/sec=7.976
+Episode 76 complete | total_step=8919 | episode_steps=500 | reward=71.073 | target=0 | collision=0 | final_distance=0.471 | steps/sec=8.096
+Episode 77 complete | total_step=8951 | episode_steps=32 | reward=134.631 | target=1 | collision=0 | final_distance=0.275 | steps/sec=8.041
+Episode 78 complete | total_step=8981 | episode_steps=30 | reward=-80.802 | target=0 | collision=1 | final_distance=2.740 | steps/sec=8.008
+Episode 79 complete | total_step=9031 | episode_steps=50 | reward=116.512 | target=1 | collision=0 | final_distance=0.240 | steps/sec=7.989
+Episode 80 complete | total_step=9094 | episode_steps=63 | reward=206.747 | target=1 | collision=0 | final_distance=0.264 | steps/sec=7.978
+Recent 10 episodes | avg_reward=109.963 | success_rate=0.700 | collision_rate=0.200 | success_count=64 | collision_count=8
+Episode 81 complete | total_step=9434 | episode_steps=340 | reward=-193.064 | target=0 | collision=1 | final_distance=3.383 | steps/sec=7.868
+Episode 82 complete | total_step=9595 | episode_steps=161 | reward=146.580 | target=1 | collision=0 | final_distance=0.277 | steps/sec=7.937
+Episode 83 complete | total_step=9639 | episode_steps=44 | reward=183.521 | target=1 | collision=0 | final_distance=0.243 | steps/sec=8.000
+Episode 84 complete | total_step=9769 | episode_steps=130 | reward=215.940 | target=1 | collision=0 | final_distance=0.246 | steps/sec=8.023
+Episode 85 complete | total_step=9812 | episode_steps=43 | reward=127.292 | target=1 | collision=0 | final_distance=0.239 | steps/sec=8.008
+Episode 86 complete | total_step=9866 | episode_steps=54 | reward=133.027 | target=1 | collision=0 | final_distance=0.293 | steps/sec=8.249
+Episode 87 complete | total_step=9927 | episode_steps=61 | reward=146.032 | target=1 | collision=0 | final_distance=0.259 | steps/sec=8.737
+Episode 88 complete | total_step=10005 | episode_steps=78 | reward=174.272 | target=1 | collision=0 | final_distance=0.239 | steps/sec=8.030
+Episode 89 complete | total_step=10055 | episode_steps=50 | reward=152.374 | target=1 | collision=0 | final_distance=0.267 | steps/sec=8.047
+Episode 90 complete | total_step=10130 | episode_steps=75 | reward=207.217 | target=1 | collision=0 | final_distance=0.268 | steps/sec=8.049
+Recent 10 episodes | avg_reward=129.319 | success_rate=0.900 | collision_rate=0.100 | success_count=73 | collision_count=9
+Episode 91 complete | total_step=10178 | episode_steps=48 | reward=-45.930 | target=0 | collision=1 | final_distance=2.543 | steps/sec=7.981
+Episode 92 complete | total_step=10203 | episode_steps=25 | reward=146.159 | target=1 | collision=0 | final_distance=0.252 | steps/sec=8.022
+Episode 93 complete | total_step=10301 | episode_steps=98 | reward=172.863 | target=1 | collision=0 | final_distance=0.269 | steps/sec=8.118
+Episode 94 complete | total_step=10330 | episode_steps=29 | reward=151.219 | target=1 | collision=0 | final_distance=0.221 | steps/sec=7.981
+Episode 95 complete | total_step=10359 | episode_steps=29 | reward=-98.345 | target=0 | collision=1 | final_distance=2.871 | steps/sec=7.766
+Episode 96 complete | total_step=10389 | episode_steps=30 | reward=153.839 | target=1 | collision=0 | final_distance=0.295 | steps/sec=8.094
+Episode 97 complete | total_step=10454 | episode_steps=65 | reward=200.162 | target=1 | collision=0 | final_distance=0.278 | steps/sec=8.058
+Episode 98 complete | total_step=10546 | episode_steps=92 | reward=175.256 | target=1 | collision=0 | final_distance=0.233 | steps/sec=8.037
+Episode 99 complete | total_step=10704 | episode_steps=158 | reward=223.288 | target=1 | collision=0 | final_distance=0.265 | steps/sec=8.109
+Episode 100 complete | total_step=10716 | episode_steps=12 | reward=-81.911 | target=0 | collision=1 | final_distance=5.534 | steps/sec=8.763
+Recent 10 episodes | avg_reward=99.660 | success_rate=0.700 | collision_rate=0.300 | success_count=80 | collision_count=12
+Episode 101 complete | total_step=11216 | episode_steps=500 | reward=15.844 | target=0 | collision=0 | final_distance=1.153 | steps/sec=8.198
+Episode 102 complete | total_step=11291 | episode_steps=75 | reward=213.823 | target=1 | collision=0 | final_distance=0.273 | steps/sec=8.085
+Episode 103 complete | total_step=11394 | episode_steps=103 | reward=-55.223 | target=0 | collision=1 | final_distance=0.752 | steps/sec=8.021
+Episode 104 complete | total_step=11482 | episode_steps=88 | reward=166.880 | target=1 | collision=0 | final_distance=0.289 | steps/sec=8.057
+Episode 105 complete | total_step=11520 | episode_steps=38 | reward=172.966 | target=1 | collision=0 | final_distance=0.263 | steps/sec=8.932
+Episode 106 complete | total_step=11578 | episode_steps=58 | reward=120.858 | target=1 | collision=0 | final_distance=0.279 | steps/sec=8.821
+Episode 107 complete | total_step=11702 | episode_steps=124 | reward=153.557 | target=1 | collision=0 | final_distance=0.271 | steps/sec=8.094
+Episode 108 complete | total_step=11771 | episode_steps=69 | reward=221.107 | target=1 | collision=0 | final_distance=0.288 | steps/sec=7.998
+Episode 109 complete | total_step=11806 | episode_steps=35 | reward=130.809 | target=1 | collision=0 | final_distance=0.296 | steps/sec=8.065
