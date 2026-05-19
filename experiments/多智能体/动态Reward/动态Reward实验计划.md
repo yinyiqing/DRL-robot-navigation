@@ -10,7 +10,7 @@ reward_i = mean(reward_j for j in [i + visible_neighbors_i])
 
 其中 `visible_neighbors_i` 表示机器人 `i` 当前感知范围内的其他机器人。如果没有可见邻居，则退化为自己的原始 reward。
 
-这个实验直接对应导师提出的想法：每个机器人当前时刻的 reward 在训练阶段改成它雷达感知范围内所有机器人的 reward 平均，看看能不能学到一些多机协同能力。
+这个实验直接对应：每个机器人当前时刻的 reward 在训练阶段改成它雷达感知范围内所有机器人的 reward 平均，看看能不能学到一些多机协同能力。
 
 ## 与现有 baseline 的边界
 
